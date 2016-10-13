@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="/index.js"></script>
+  </head>
+  <body>
+    <script>
+(function() {
+  var app = Elm.Main.fullscreen();
+  app.ports.portone.subscribe(function() {
+    console.log('portone');
+  });
+  app.ports.porttwo.subscribe(function() {
+    console.log('porttwo');
+  });
+})();
+    </script>
+  </body>
+</html>
